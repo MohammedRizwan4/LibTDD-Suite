@@ -40,7 +40,7 @@ class LibraryTest {
         assertNotNull(storedBook);
         assertEquals("9780132350884", storedBook.getISBN());
         assertEquals("Clean Code", storedBook.getTitle());
-        assertEquals("9Robert Cecil Martin", storedBook.getAuthor());
-        assertEquals(2012, storedBook.getPublicationYear());
+        assertEquals("Robert Cecil Martin", storedBook.getAuthor());
+        assertEquals(Year.of(2012), storedBook.getPublicationYear());
     }
 }
