@@ -29,11 +29,12 @@ class LibraryTest {
     }
 
     @Test
-    public void testShouldAddBookToLibrary() {
+    public void testShouldAllowOnlyPermittedUserToAddBook() {
         Library library = new Library("Drishti");
+        User user = new User("Rizwan", "librarian");
 
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
-        library.addBook(book);
+        library.addBook(user, book);
 
         Book storedBook = library.getBookByISBN("9780132350884");
 
