@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed TestCase: Library name should be greater than 4 characters">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: test will fail to add a book because Book class not found">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,6 +34,7 @@
     "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotbeNull.executor": "Run",
+    "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -214,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723213723120</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Failed TestCase: test will fail to add a book because Book class not found">
+      <option name="closed" value="true" />
+      <created>1723214786107</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723214786107</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +238,7 @@
     <MESSAGE value="Passed TestCase: Blank Library name validation added" />
     <MESSAGE value="Failed TestCase: Library Name should be greater than at least 4 characters" />
     <MESSAGE value="Passed TestCase: Library name should be greater than 4 characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed TestCase: Library name should be greater than 4 characters" />
+    <MESSAGE value="Failed TestCase: test will fail to add a book because Book class not found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: test will fail to add a book because Book class not found" />
   </component>
 </project>

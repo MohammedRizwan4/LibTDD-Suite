@@ -2,6 +2,8 @@ package com.rizwan;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Year;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -30,10 +32,10 @@ class LibraryTest {
     public void testShouldAddBookToLibrary() {
         Library library = new Library("Drishti");
 
-        Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", 2012);
+        Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
         library.addBook(book);
 
-        Book storedBook = getBookByISBN("9780132350884");
+        Book storedBook = library.getBookByISBN("9780132350884");
 
         assertNotNull(storedBook);
         assertEquals("9780132350884", storedBook.getISBN());
