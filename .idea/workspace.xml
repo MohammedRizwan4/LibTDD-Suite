@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: User class added. Only Authorized User Are permitted to add book.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: User class added. Only Authorized User Are permitted to add book." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +25,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.LibraryTest.executor": "Coverage",
+    "JUnit.LibraryTest.executor": "Run",
     "JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
@@ -61,7 +58,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook">
+  <component name="RunManager" selected="JUnit.LibraryTest">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -143,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldAddBookToLibrary" />
-        <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" />
       </list>
     </recent_temporary>
@@ -288,7 +285,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: User class added. Only Authorized User Are permitted to add book." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723219099677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723230682310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.rizwan.*</FILTER>
     </SUITE>
   </component>
