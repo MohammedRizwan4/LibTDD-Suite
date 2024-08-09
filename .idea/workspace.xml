@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: Library Name should not be empty">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed TestCase: Blank Library name validation added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,7 @@
   "keyToString": {
     "JUnit.LibraryTest.executor": "Run",
     "JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup.executor": "Run",
+    "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotbeNull.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
@@ -57,22 +58,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty">
-    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters">
     <configuration name="LibraryTest.testLibraryCreationFailsWithoutProperSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -84,6 +70,22 @@
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
       <option name="METHOD_NAME" value="testLibraryCreationFailsWithoutProperSetup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testLibraryNameShouldBeGreaterThan4Characters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" />
         <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty" />
         <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldNotbeNull" />
         <item itemvalue="JUnit.LibraryTest.testShouldFailWithoutProperConstructor" />
         <item itemvalue="JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723213049066</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Passed TestCase: Blank Library name validation added">
+      <option name="closed" value="true" />
+      <created>1723213410909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723213410909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +210,7 @@
     <MESSAGE value="Failed TestCase: Library Name should not be null" />
     <MESSAGE value="Passed TestCase: Library name validation added" />
     <MESSAGE value="Failed TestCase: Library Name should not be empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: Library Name should not be empty" />
+    <MESSAGE value="Passed TestCase: Blank Library name validation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed TestCase: Blank Library name validation added" />
   </component>
 </project>
