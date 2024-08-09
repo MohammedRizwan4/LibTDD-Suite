@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: AddBook method added to Book Class">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: implemented getBookByISBN method and refactor publication Year">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +29,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.LibraryTest.executor": "Run",
+    "JUnit.LibraryTest.executor": "Coverage",
     "JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotbeNull.executor": "Run",
-    "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Run",
+    "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Debug",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -240,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723215633513</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Passed Test Case: implemented getBookByISBN method and refactor publication Year">
+      <option name="closed" value="true" />
+      <created>1723218226083</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723218226083</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +265,12 @@
     <MESSAGE value="Failed TestCase: test will fail to add a book because Book class not found" />
     <MESSAGE value="[Refactor]: Book class Added" />
     <MESSAGE value="[Refactor]: AddBook method added to Book Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: AddBook method added to Book Class" />
+    <MESSAGE value="Passed Test Case: implemented getBookByISBN method and refactor publication Year" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: implemented getBookByISBN method and refactor publication Year" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723219099677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.rizwan.*</FILTER>
+    </SUITE>
   </component>
 </project>
