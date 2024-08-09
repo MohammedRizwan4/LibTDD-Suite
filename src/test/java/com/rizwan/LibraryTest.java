@@ -41,4 +41,14 @@ class LibraryTest {
         assertNotNull(storedBook);
         assertEquals(book, storedBook);
     }
+
+    @Test
+    public void testShouldThrowExceptionIfUnauthorizedUserAddBook() {
+        Library library = new Library("Drishti");
+        User user = new User("Rizwan", "user");
+
+        Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
+        SecurityException exceptionMessage = assertThrows(SecurityException.class, () -> library.addBook(user, book));
+        assertEquals("You are not authorized to add book", exceptionMessage.getMessage());
+    }
 }

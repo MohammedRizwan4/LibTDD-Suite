@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: Override equals and hashCode method to check equality of Book object.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/User.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: User class added. Only Authorized User Are permitted to add book.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +36,7 @@
     "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Debug",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
+    "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,7 +61,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -89,22 +88,6 @@
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
       <option name="METHOD_NAME" value="testLibraryNameShouldBeGreaterThan4Characters" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.testLibraryNameShouldNotBeEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testLibraryNameShouldNotBeEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,13 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testShouldThrowExceptionIfUnauthorizedUserAddBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldAddBookToLibrary" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" />
-        <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723222377769</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[Refactor]: User class added. Only Authorized User Are permitted to add book.">
+      <option name="closed" value="true" />
+      <created>1723230388393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723230388393</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +284,8 @@
     <MESSAGE value="[Refactor]: AddBook method added to Book Class" />
     <MESSAGE value="Passed Test Case: implemented getBookByISBN method and refactor publication Year" />
     <MESSAGE value="[Refactor]: Override equals and hashCode method to check equality of Book object." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: Override equals and hashCode method to check equality of Book object." />
+    <MESSAGE value="[Refactor]: User class added. Only Authorized User Are permitted to add book." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: User class added. Only Authorized User Are permitted to add book." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723219099677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
