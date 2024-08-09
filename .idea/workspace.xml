@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: test will fail to add a book because Book class not found">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: Book class Added">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723214786107</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Refactor]: Book class Added">
+      <option name="closed" value="true" />
+      <created>1723215331587</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723215331587</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +245,7 @@
     <MESSAGE value="Failed TestCase: Library Name should be greater than at least 4 characters" />
     <MESSAGE value="Passed TestCase: Library name should be greater than 4 characters" />
     <MESSAGE value="Failed TestCase: test will fail to add a book because Book class not found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: test will fail to add a book because Book class not found" />
+    <MESSAGE value="[Refactor]: Book class Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: Book class Added" />
   </component>
 </project>
