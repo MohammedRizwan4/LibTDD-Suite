@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: ensured that returned HashMap from viewAvailableBooks will be unmodifiable">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: Added failing test case for borrowing an available book">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
     "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Debug",
     "JUnit.LibraryTest.testShouldAddUserToLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
+    "JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
     "JUnit.LibraryTest.testShouldFetchUserByUsername.executor": "Run",
     "JUnit.LibraryTest.testShouldNotAllowDuplicateUsers.executor": "Run",
@@ -78,7 +79,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldReturnUnmodifiableHashMap">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -94,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testShouldFetchUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testShouldAllowToBorrowBookFromLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldFetchUserByUsername" />
+      <option name="METHOD_NAME" value="testShouldAllowToBorrowBookFromLibrary" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableHashMap" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableMap" />
         <item itemvalue="JUnit.LibraryTest.testShouldRetrieveAllAvailableBooks" />
         <item itemvalue="JUnit.LibraryTest" />
-        <item itemvalue="JUnit.LibraryTest.testShouldFetchUserByUsername" />
       </list>
     </recent_temporary>
   </component>
@@ -410,14 +411,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723299371658</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Failed TestCase: Added failing test case for borrowing an available book">
+      <option name="closed" value="true" />
+      <created>1723300044729</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1723300044729</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passed TestCase: Blank Library name validation added" />
     <MESSAGE value="Failed TestCase: Library Name should be greater than at least 4 characters" />
     <MESSAGE value="Passed TestCase: Library name should be greater than 4 characters" />
     <MESSAGE value="Failed TestCase: test will fail to add a book because Book class not found" />
@@ -442,7 +450,8 @@
     <MESSAGE value="Passed Test Case: Implemented viewAvailableBooks method to view all books" />
     <MESSAGE value="Failed TestCase: added failing test case to ensure that viewAvailableBooks return unmodifiable HashMap" />
     <MESSAGE value="Passed Test Case: ensured that returned HashMap from viewAvailableBooks will be unmodifiable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: ensured that returned HashMap from viewAvailableBooks will be unmodifiable" />
+    <MESSAGE value="Failed TestCase: Added failing test case for borrowing an available book" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: Added failing test case for borrowing an available book" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

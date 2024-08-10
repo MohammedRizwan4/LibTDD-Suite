@@ -10,6 +10,7 @@ public class Library {
     String name;
     private final Map<String, Book> bookInventory;
     private final Map<String, User> userCatalog;
+    private final Map<String, String> borrowedBooks;
 
     public Library(String name) {
         if(name == null || name.isBlank() || name.length() <= 4) {
@@ -18,6 +19,7 @@ public class Library {
         this.name = name;
         this.bookInventory = new HashMap<String, Book>();
         this.userCatalog = new HashMap<String, User>();
+        this.borrowedBooks = new HashMap<String, String>();
     }
 
     public void addUser(User user) {
@@ -37,6 +39,12 @@ public class Library {
         } else {
             throw new PermissionDeniedException("You are not authorized to add book");
         }
+    }
+
+    public void borrowBook(User user, String isbn) {
+        Book book = bookInventory.get(isbn);
+        borrowedBooks.put(isbn, user.getUserName());
+        bookInventory.remove(isbn);
     }
 
     public Map<String, Book> viewAvailableBooks() {
