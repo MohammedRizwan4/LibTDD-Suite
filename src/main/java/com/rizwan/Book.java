@@ -10,6 +10,15 @@ public class Book {
 
     public Book(String isbn, String title, String author, Year publicationYear) {
 
+        validateRequiredAttributes(isbn, title, author, publicationYear);
+
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.publicationYear = publicationYear;
+    }
+
+    private void validateRequiredAttributes(String isbn, String title, String author, Year publicationYear) {
         if(isbn == null || isbn.isBlank()){
             throw new IllegalArgumentException("ISBN should not be null or empty");
         }
@@ -22,27 +31,10 @@ public class Book {
         if(publicationYear == null){
             throw new IllegalArgumentException("publication year should not be null");
         }
-
-        this.isbn = isbn;
-        this.title = title;
-        this.author = author;
-        this.publicationYear = publicationYear;
     }
 
     public String getISBN() {
         return isbn;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public Year getPublicationYear() {
-        return publicationYear;
     }
 
     @Override
