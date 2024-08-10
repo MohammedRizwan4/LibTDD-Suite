@@ -80,7 +80,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionWhenBookIsAlreadyBorrowed">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook">
     <configuration name="LibraryTest.testShouldAllowToBorrowBookFromLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -97,6 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testShouldReturnBorrowerNameWhoBorrowedBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest.testShouldReturnUnmodifiableHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -108,22 +124,6 @@
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
       <option name="METHOD_NAME" value="testShouldReturnUnmodifiableHashMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.testShouldReturnUnmodifiableMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldReturnUnmodifiableMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenBookIsAlreadyBorrowed" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableHashMap" />
-        <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableMap" />
       </list>
     </recent_temporary>
   </component>
