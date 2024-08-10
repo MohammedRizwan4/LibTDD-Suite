@@ -48,7 +48,7 @@ class LibraryTest {
         User user = new User("Rizwan", Role.USER);
 
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
-        SecurityException exceptionMessage = assertThrows(SecurityException.class, () -> library.addBook(user, book));
-        assertEquals("You are not authorized to add book", exceptionMessage.getMessage());
+        PermissionDeniedException exception = assertThrows(PermissionDeniedException.class, () -> library.addBook(user, book));
+        assertEquals("You are not authorized to add book", exception.getMessage());
     }
 }
