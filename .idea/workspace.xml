@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation.">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: addUser and getUserByName method not found">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723278062094</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Failed TestCase: addUser and getUserByName method not found">
+      <option name="closed" value="true" />
+      <created>1723295331109</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295331109</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +353,8 @@
     <MESSAGE value="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users." />
     <MESSAGE value="Failed TestCase: Added failing tests for validating null and empty fields in Book Class constructor" />
     <MESSAGE value="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation." />
+    <MESSAGE value="Failed TestCase: addUser and getUserByName method not found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: addUser and getUserByName method not found" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723277293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
