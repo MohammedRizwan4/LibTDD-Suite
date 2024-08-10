@@ -43,6 +43,11 @@ public class Library {
 
     public void borrowBook(User user, String isbn) {
         Book book = bookInventory.get(isbn);
+
+        if(book == null){
+            throw new IllegalArgumentException("Book not found");
+        }
+
         borrowedBooks.put(isbn, user.getUserName());
         bookInventory.remove(isbn);
     }
