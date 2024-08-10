@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: Implemented logic to prevent duplicate users in library">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: User fetched by username from users catalog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
@@ -34,7 +34,7 @@
   "keyToString": {
     "JUnit.BookTest.executor": "Run",
     "JUnit.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more.executor": "Coverage",
-    "JUnit.LibraryTest.executor": "Coverage",
+    "JUnit.LibraryTest.executor": "Run",
     "JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
@@ -43,6 +43,7 @@
     "JUnit.LibraryTest.testShouldAddUserToLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
+    "JUnit.LibraryTest.testShouldFetchUserByUsername.executor": "Run",
     "JUnit.LibraryTest.testShouldNotAllowDuplicateUsers.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
@@ -74,7 +75,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldFetchUserByUsername">
+  <component name="RunManager" selected="JUnit.LibraryTest">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testShouldFetchUserByUsername" />
         <item itemvalue="JUnit.LibraryTest.testShouldNotAllowDuplicateUsers" />
         <item itemvalue="JUnit.LibraryTest.testShouldAddUserToLibrary" />
         <item itemvalue="JUnit.BookTest" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723295993448</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Passed Test Case: User fetched by username from users catalog">
+      <option name="closed" value="true" />
+      <created>1723296249769</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1723296249769</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +396,8 @@
     <MESSAGE value="Passed Test Case: implemented storing user functionality in library" />
     <MESSAGE value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
     <MESSAGE value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
+    <MESSAGE value="Passed Test Case: User fetched by username from users catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: User fetched by username from users catalog" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723277293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
