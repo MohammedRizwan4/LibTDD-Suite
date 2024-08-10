@@ -1,5 +1,7 @@
 package com.rizwan;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,7 +40,7 @@ public class Library {
     }
 
     public Map<String, Book> viewAvailableBooks() {
-        return new HashMap<>(bookInventory);
+        return Collections.unmodifiableMap(new HashMap<>(bookInventory));
     }
 
     public Book getBookByISBN(String isbn) {
