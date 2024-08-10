@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,7 @@
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotbeNull.executor": "Run",
     "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Debug",
+    "JUnit.LibraryTest.testShouldAddUserToLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
@@ -72,7 +74,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldAddUserToLibrary">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -99,6 +101,22 @@
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.testShouldAddUserToLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testShouldAddUserToLibrary" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,29 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testWithValidationForBookClassFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testWithValidationForBookClassFields" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldAddUserToLibrary" />
         <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull" />
-        <item itemvalue="JUnit.LibraryTest.testWithValidationForBookClassFields" />
       </list>
     </recent_temporary>
   </component>

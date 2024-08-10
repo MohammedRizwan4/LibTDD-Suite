@@ -7,6 +7,7 @@ public class Library {
 
     String name;
     private final Map<String, Book> bookInventory;
+    private final Map<String, User> userCatalog;
 
     public Library(String name) {
         if(name == null || name.isBlank() || name.length() <= 4) {
@@ -14,6 +15,7 @@ public class Library {
         }
         this.name = name;
         this.bookInventory = new HashMap<String, Book>();
+        this.userCatalog = new HashMap<String, User>();
     }
 
     public void addBook(User user, Book book) {
