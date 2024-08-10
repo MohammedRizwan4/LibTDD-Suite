@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: implemented storing user functionality in library">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed Test Case: Added failing test case for duplicate user prevention in library catalog">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     "JUnit.LibraryTest.testShouldAddUserToLibrary.executor": "Run",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
+    "JUnit.LibraryTest.testShouldNotAllowDuplicateUsers.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull.executor": "Run",
@@ -335,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723295403433</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Failed Test Case: Added failing test case for duplicate user prevention in library catalog">
+      <option name="closed" value="true" />
+      <created>1723295892945</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295892945</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +371,8 @@
     <MESSAGE value="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation." />
     <MESSAGE value="Failed TestCase: addUser and getUserByName method not found" />
     <MESSAGE value="Passed Test Case: implemented storing user functionality in library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: implemented storing user functionality in library" />
+    <MESSAGE value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723277293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
