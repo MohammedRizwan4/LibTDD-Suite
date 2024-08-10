@@ -9,6 +9,20 @@ public class Book {
     private Year publicationYear;
 
     public Book(String isbn, String title, String author, Year publicationYear) {
+
+        if(isbn == null || isbn.isBlank()){
+            throw new IllegalArgumentException("ISBN should not be null or empty");
+        }
+        if(title == null || title.isBlank()){
+            throw new IllegalArgumentException("title should not be null or empty");
+        }
+        if(author == null || author.isBlank()){
+            throw new IllegalArgumentException("author should not be null or empty");
+        }
+        if(publicationYear == null){
+            throw new IllegalArgumentException("publication year should not be null");
+        }
+
         this.isbn = isbn;
         this.title = title;
         this.author = author;
