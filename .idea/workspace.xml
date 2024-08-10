@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: Updated test case to use Role enum when adding books.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/PermissionDeniedException.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -31,7 +32,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.LibraryTest.executor": "Run",
+    "JUnit.BookTest.executor": "Coverage",
+    "JUnit.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more.executor": "Coverage",
+    "JUnit.LibraryTest.executor": "Coverage",
     "JUnit.LibraryTest.testLibraryCreationFailsWithoutProperSetup.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters.executor": "Run",
     "JUnit.LibraryTest.testLibraryNameShouldNotBeEmpty.executor": "Run",
@@ -39,7 +42,10 @@
     "JUnit.LibraryTest.testShouldAddBookToLibrary.executor": "Debug",
     "JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook.executor": "Run",
     "JUnit.LibraryTest.testShouldFailWithoutProperConstructor.executor": "Run",
+    "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
+    "JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull.executor": "Run",
+    "JUnit.LibraryTest.testWithValidationForBookClassFields.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -47,12 +53,14 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/rizwa/IdeaProjects/LibraryManagement/src/test/java/com/rizwan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/rizwa/IdeaProjects/LibraryManagement/src/main/java/com/rizwan/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,7 +72,22 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest">
+  <component name="RunManager" selected="JUnit.BookTest">
+    <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.BookTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -80,7 +103,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.rizwan.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty" />
+        <pattern testClass="com.rizwan.LibraryTest,testShouldThrowExceptionWhenPublicationYearIsNull" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.testShouldThrowExceptionWhenISBNisNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +124,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testLibraryNameShouldBeGreaterThan4Characters" />
+      <option name="METHOD_NAME" value="testShouldThrowExceptionWhenISBNisNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testShouldAddBookToLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testWithValidationForBookClassFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
         <pattern>
@@ -106,39 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldAddBookToLibrary" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.testShouldAllowOnlyPermittedUserToAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldAllowOnlyPermittedUserToAddBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldThrowExceptionIfUnauthorizedUserAddBook" />
+      <option name="METHOD_NAME" value="testWithValidationForBookClassFields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.LibraryTest" />
-        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook" />
-        <item itemvalue="JUnit.LibraryTest.testShouldAllowOnlyPermittedUserToAddBook" />
-        <item itemvalue="JUnit.LibraryTest.testShouldAddBookToLibrary" />
-        <item itemvalue="JUnit.LibraryTest.testLibraryNameShouldBeGreaterThan4Characters" />
+        <item itemvalue="JUnit.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more" />
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull" />
+        <item itemvalue="JUnit.LibraryTest.testWithValidationForBookClassFields" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723231828543</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users.">
+      <option name="closed" value="true" />
+      <created>1723275345159</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723275345159</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,10 +325,15 @@
     <MESSAGE value="[Refactor]: Role enum added for handling user roles" />
     <MESSAGE value="[Refactor]: User Class Updated with the use of Role enum" />
     <MESSAGE value="[Refactor]: Updated test case to use Role enum when adding books." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: Updated test case to use Role enum when adding books." />
+    <MESSAGE value="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723230682310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723277293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.rizwan.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest_testShouldThrowExceptionWhenAuthorIsEmpty_and_1_more.ic" NAME="LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more Coverage Results" MODIFIED="1723277119521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LibraryManagement$BookTest.ic" NAME="BookTest Coverage Results" MODIFIED="1723277449484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.rizwan.*</FILTER>
     </SUITE>
   </component>
