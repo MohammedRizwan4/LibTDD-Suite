@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed Test Case: Added failing test case for duplicate user prevention in library catalog">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: Implemented logic to prevent duplicate users in library">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldNotAllowDuplicateUsers">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldFetchUserByUsername">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -120,6 +121,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testShouldFetchUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testShouldFetchUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest.testShouldNotAllowDuplicateUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -136,24 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="com.rizwan.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty" />
-        <pattern testClass="com.rizwan.LibraryTest,testShouldThrowExceptionWhenPublicationYearIsNull" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldFetchUserByUsername" />
         <item itemvalue="JUnit.LibraryTest.testShouldNotAllowDuplicateUsers" />
         <item itemvalue="JUnit.LibraryTest.testShouldAddUserToLibrary" />
         <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.LibraryTest" />
-        <item itemvalue="JUnit.LibraryTest,testShouldThrowExceptionWhenAuthorIsEmpty and 1 more" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723295892945</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Passed Test Case: Implemented logic to prevent duplicate users in library">
+      <option name="closed" value="true" />
+      <created>1723295993448</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295993448</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +386,8 @@
     <MESSAGE value="Failed TestCase: addUser and getUserByName method not found" />
     <MESSAGE value="Passed Test Case: implemented storing user functionality in library" />
     <MESSAGE value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
+    <MESSAGE value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723277293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
