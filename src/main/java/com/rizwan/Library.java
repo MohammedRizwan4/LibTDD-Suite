@@ -11,6 +11,7 @@ public class Library {
     private final Map<String, Book> bookInventory;
     private final Map<String, User> userCatalog;
     private final Map<String, String> borrowedBooks;
+    private final Map<String, Book> borrowedBookDetails;
 
     public Library(String name) {
         if(name == null || name.isBlank() || name.length() <= 4) {
@@ -20,6 +21,7 @@ public class Library {
         this.bookInventory = new HashMap<String, Book>();
         this.userCatalog = new HashMap<String, User>();
         this.borrowedBooks = new HashMap<String, String>();
+        this.borrowedBookDetails = new HashMap<String, Book>();
     }
 
     public void addUser(User user) {
@@ -57,7 +59,14 @@ public class Library {
         }
 
         borrowedBooks.put(isbn, user.getUserName());
+        borrowedBookDetails.put(isbn, book);
         bookInventory.remove(isbn);
+    }
+
+    public void returnBook(User user, String isbn) {
+        Book book = getBookByISBNFromBorrowedBook(isbn);
+        bookInventory.put(isbn, book);
+        borrowedBooks.remove(isbn);
     }
 
     public String getBorrowerNameByISBN(String isbn) {
@@ -66,6 +75,10 @@ public class Library {
 
     public Map<String, Book> viewAvailableBooks() {
         return Collections.unmodifiableMap(new HashMap<>(bookInventory));
+    }
+
+    public Book getBookByISBNFromBorrowedBook(String isbn) {
+        return borrowedBookDetails.get(isbn);
     }
 
     public Book getBookByISBN(String isbn) {
