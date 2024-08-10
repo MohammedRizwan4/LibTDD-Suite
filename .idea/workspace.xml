@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed Test Case: ensured that exception is thrown when borrowing an unavailable book">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: failing a test case borrowing a book that is already borrowed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,14 +446,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723301975614</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Failed TestCase: failing a test case borrowing a book that is already borrowed">
+      <option name="closed" value="true" />
+      <created>1723304736289</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1723304736289</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Refactor]: Book class Added" />
     <MESSAGE value="[Refactor]: AddBook method added to Book Class" />
     <MESSAGE value="Passed Test Case: implemented getBookByISBN method and refactor publication Year" />
     <MESSAGE value="[Refactor]: Override equals and hashCode method to check equality of Book object." />
@@ -478,7 +485,8 @@
     <MESSAGE value="[Refactor]: implemented functionality that keep track of which user has borrowed which book" />
     <MESSAGE value="Failed TestCase: failing a test case borrowing a book that does not exist." />
     <MESSAGE value="Passed Test Case: ensured that exception is thrown when borrowing an unavailable book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed Test Case: ensured that exception is thrown when borrowing an unavailable book" />
+    <MESSAGE value="Failed TestCase: failing a test case borrowing a book that is already borrowed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: failing a test case borrowing a book that is already borrowed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
