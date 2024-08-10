@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: Added failing test case for borrowing an available book">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: implemented functionality that keep track of which user has borrowed which book">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
     "JUnit.LibraryTest.testShouldReturnUnmodifiableMap.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
+    "JUnit.LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull.executor": "Run",
     "JUnit.LibraryTest.testWithValidationForBookClassFields.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -79,22 +80,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary">
-    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest">
     <configuration name="LibraryTest.testShouldAllowToBorrowBookFromLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -159,13 +145,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
+      <option name="METHOD_NAME" value="testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowToBorrowBookFromLibrary" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableHashMap" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnUnmodifiableMap" />
         <item itemvalue="JUnit.LibraryTest.testShouldRetrieveAllAvailableBooks" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -419,14 +421,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723300044729</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="[Refactor]: implemented functionality that keep track of which user has borrowed which book">
+      <option name="closed" value="true" />
+      <created>1723300541334</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1723300541334</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Failed TestCase: Library Name should be greater than at least 4 characters" />
     <MESSAGE value="Passed TestCase: Library name should be greater than 4 characters" />
     <MESSAGE value="Failed TestCase: test will fail to add a book because Book class not found" />
     <MESSAGE value="[Refactor]: Book class Added" />
@@ -451,7 +460,8 @@
     <MESSAGE value="Failed TestCase: added failing test case to ensure that viewAvailableBooks return unmodifiable HashMap" />
     <MESSAGE value="Passed Test Case: ensured that returned HashMap from viewAvailableBooks will be unmodifiable" />
     <MESSAGE value="Failed TestCase: Added failing test case for borrowing an available book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: Added failing test case for borrowing an available book" />
+    <MESSAGE value="[Refactor]: implemented functionality that keep track of which user has borrowed which book" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: implemented functionality that keep track of which user has borrowed which book" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
