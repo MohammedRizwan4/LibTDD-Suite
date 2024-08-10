@@ -157,5 +157,22 @@ class LibraryTest {
         assertEquals("Book is already borrowed", exception.getMessage());
     }
 
+    @Test
+    public void testShouldReturnBorrowerNameWhoBorrowedBook() {
+        User librarian = new User("Rizwan", Role.LIBRARIAN);
+        User user = new User("raiyan", Role.USER);
+        Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
+
+        library.addUser(librarian);
+        library.addUser(user);
+        library.addBook(librarian, book);
+
+        library.borrowBook(user, "9780132350884");
+
+        String borrowerName = library.getBorrowerNameByISBN("9780132350884");
+
+        assertEquals(user.getUserName(), borrowerName);
+    }
+
 
 }
