@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: Added failing test that throws exception if user is null">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed TestCase: handled exception when user object is null">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/utils/UserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +87,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull">
+  <component name="RunManager" selected="JUnit.LibraryTest">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -167,8 +169,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull" />
         <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowUserToReturnBookToLibrary" />
@@ -561,14 +563,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723359144965</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Passed TestCase: handled exception when user object is null">
+      <option name="closed" value="true" />
+      <created>1723359215638</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1723359215638</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
     <MESSAGE value="Passed Test Case: User fetched by username from users catalog" />
     <MESSAGE value="[Refactor]: Extracted repeated local library object and created instance variable to be reused by multiple test cases." />
     <MESSAGE value="Failed TestCase: added failing test case to view all books." />
@@ -593,7 +602,8 @@
     <MESSAGE value="[Refactor]: refactored test case from illegal argument exception to UserExistsException for duplicate users" />
     <MESSAGE value="[Refactor]: extracted string validation code for all files into StringValidator utility class" />
     <MESSAGE value="Failed TestCase: Added failing test that throws exception if user is null" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: Added failing test that throws exception if user is null" />
+    <MESSAGE value="Passed TestCase: handled exception when user object is null" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed TestCase: handled exception when user object is null" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -6,6 +6,7 @@ import com.rizwan.exceptions.UserExistsException;
 
 import static com.rizwan.utils.StringValidator.validateString;
 import static com.rizwan.utils.BookValidator.validateBookNotNull;
+import static com.rizwan.utils.UserValidator.validateUser;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -32,9 +33,7 @@ public class Library {
     }
 
     public void addUser(User user) {
-        if(user == null) {
-            throw new IllegalArgumentException("User should not be null");
-        }
+        validateUser(user, "User should not be null");
         if(userCatalog.containsKey(user.getUserName())){
             throw new UserExistsException("User already exists in catalog");
         }
@@ -46,6 +45,7 @@ public class Library {
     }
 
     public void addBook(User user, Book book) {
+        validateUser(user, "User should not be null");
         validateBookNotNull(book,"Book not found");
         if(user.isPermittedToAddBook()){
             bookInventory.put(book.getISBN(), book);
@@ -59,6 +59,7 @@ public class Library {
     }
 
     public void borrowBook(User user, String isbn) {
+        validateUser(user, "User should not be null");
         Book book = bookInventory.get(isbn);
 
         if(isBookBorrowedBySomeUser(isbn)) {
@@ -73,6 +74,7 @@ public class Library {
     }
 
     public void returnBook(User user, String isbn) {
+        validateUser(user, "User should not be null");
         if(!borrowedBooks.containsKey(isbn)) {
             throw new BookNotFoundException("Book was not borrowed by any user");
         }
