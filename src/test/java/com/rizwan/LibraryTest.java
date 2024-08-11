@@ -1,5 +1,6 @@
 package com.rizwan;
 
+import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
 import org.junit.jupiter.api.Test;
 
@@ -154,7 +155,7 @@ class LibraryTest {
 
         library.borrowBook(user1, "9780132350884");
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> library.borrowBook(user2, "9780132350884"));
+        BookAlreadyBorrowedException exception = assertThrows(BookAlreadyBorrowedException.class, () -> library.borrowBook(user2, "9780132350884"));
         assertEquals("Book is already borrowed", exception.getMessage());
     }
 

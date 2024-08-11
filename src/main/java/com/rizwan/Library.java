@@ -1,5 +1,6 @@
 package com.rizwan;
 
+import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
 
 import java.util.Collection;
@@ -53,7 +54,7 @@ public class Library {
         Book book = bookInventory.get(isbn);
 
         if(isBookBorrowedBySomeUser(isbn)) {
-            throw new IllegalArgumentException("Book is already borrowed");
+            throw new BookAlreadyBorrowedException("Book is already borrowed");
         }
 
         if(book == null){
