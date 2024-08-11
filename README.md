@@ -14,6 +14,7 @@ Welcome to my solution for the Library Management Kata! This repository showcase
   - [Import Project into IntelliJ IDEA](#import-project-into-intellij-idea)
   - [Build the Project](#build-the-project)
   - [Running Tests](#running-tests)
+- [Test Coverage](#test-coverage)
 
 ## Problem Statement
 
@@ -130,3 +131,9 @@ This project follows TDD principles to solve the kata problem. The solution is b
 ### Running Tests
 
 - To run the tests, navigate to the `LibraryTest` class and click on the run button.
+
+## Test Coverage
+
+The current test coverage of this project is **93%**.
+
+![Test Coverage Screenshot](https://i.ibb.co/dD51CGR/Screenshot-2024-08-11-195118.png) 
