@@ -2,6 +2,8 @@ package com.rizwan;
 
 import java.time.Year;
 
+import static com.rizwan.utils.StringValidator.validateString;
+
 public class Book {
     private String isbn;
     private String title;
@@ -19,15 +21,9 @@ public class Book {
     }
 
     private void validateRequiredAttributes(String isbn, String title, String author, Year publicationYear) {
-        if(isbn == null || isbn.isBlank()){
-            throw new IllegalArgumentException("ISBN should not be null or empty");
-        }
-        if(title == null || title.isBlank()){
-            throw new IllegalArgumentException("title should not be null or empty");
-        }
-        if(author == null || author.isBlank()){
-            throw new IllegalArgumentException("author should not be null or empty");
-        }
+        validateString(isbn, "ISBN should not be null or empty");
+        validateString(title, "title should not be null or empty");
+        validateString(author, "author should not be null or empty");
         if(publicationYear == null){
             throw new IllegalArgumentException("publication year should not be null");
         }

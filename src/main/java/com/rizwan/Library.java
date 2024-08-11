@@ -3,8 +3,8 @@ package com.rizwan;
 import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
 import com.rizwan.exceptions.UserExistsException;
+import static com.rizwan.utils.StringValidator.validateString;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +18,9 @@ public class Library {
     private final Map<String, Book> borrowedBookDetails;
 
     public Library(String name) {
-        if(name == null || name.isBlank() || name.length() <= 4) {
-            throw new IllegalArgumentException("Library Name Should not be null or empty or should have atleast 4 characters");
+        validateString(name, "Library Name Should not be null or empty");
+        if(name.length() <= 4) {
+            throw new IllegalArgumentException("Library Name Should have at least 4 characters");
         }
         this.name = name;
         this.bookInventory = new HashMap<String, Book>();
