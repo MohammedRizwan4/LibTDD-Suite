@@ -1,6 +1,11 @@
 package com.rizwan;
 
 public class User {
+
+    public static enum Role {
+        LIBRARIAN,
+        USER
+    }
     private String userName;
     private Role role;
 

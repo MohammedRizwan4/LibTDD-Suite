@@ -44,7 +44,7 @@ class LibraryTest {
 
     @Test
     public void testShouldAllowOnlyPermittedUserToAddBook() {
-        User user = new User("Rizwan", Role.LIBRARIAN);
+        User user = new User("Rizwan", User.Role.LIBRARIAN);
 
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
         library.addBook(user, book);
@@ -57,7 +57,7 @@ class LibraryTest {
 
     @Test
     public void testShouldThrowExceptionIfUnauthorizedUserAddBook() {
-        User user = new User("Rizwan", Role.USER);
+        User user = new User("Rizwan", User.Role.USER);
 
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
         PermissionDeniedException exception = assertThrows(PermissionDeniedException.class, () -> library.addBook(user, book));
@@ -66,7 +66,7 @@ class LibraryTest {
 
     @Test
     public void testShouldAddUserToLibrary() {
-        User librarian = new User("rizwan", Role.LIBRARIAN);
+        User librarian = new User("rizwan", User.Role.LIBRARIAN);
 
         library.addUser(librarian);
 
@@ -76,8 +76,8 @@ class LibraryTest {
 
     @Test
     public void testShouldNotAllowDuplicateUsers() {
-        User primaryLibrarian = new User("rizwan", Role.LIBRARIAN);
-        User secondaryLibrarian = new User("rizwan", Role.LIBRARIAN);
+        User primaryLibrarian = new User("rizwan", User.Role.LIBRARIAN);
+        User secondaryLibrarian = new User("rizwan", User.Role.LIBRARIAN);
 
         library.addUser(primaryLibrarian);
         UserExistsException exception = assertThrows(UserExistsException.class, () -> library.addUser(secondaryLibrarian));
@@ -86,7 +86,7 @@ class LibraryTest {
 
     @Test
     public void testShouldFetchUserByUsername() {
-        User primaryLibrarian = new User("rizwan", Role.LIBRARIAN);
+        User primaryLibrarian = new User("rizwan", User.Role.LIBRARIAN);
 
         library.addUser(primaryLibrarian);
         User fetchedUser = library.getUserByName("rizwan");
@@ -95,7 +95,7 @@ class LibraryTest {
 
     @Test
     public void testShouldRetrieveAllAvailableBooks() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
         Book book1 = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
         Book book2 = new Book("9780134685991", "Effective Java", "Joshua Bloch", Year.of(2018));
 
@@ -112,7 +112,7 @@ class LibraryTest {
 
     @Test
     public void testShouldReturnUnmodifiableHashMap() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
         Book book1 = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -125,8 +125,8 @@ class LibraryTest {
 
     @Test
     public void testShouldAllowToBorrowBookFromLibrary() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
-        User user = new User("raiyan", Role.USER);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
+        User user = new User("raiyan", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -142,7 +142,7 @@ class LibraryTest {
     @Test
     public void testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest() {
 
-        User user = new User("rizwan", Role.USER);
+        User user = new User("rizwan", User.Role.USER);
 
         library.addUser(user);
 
@@ -153,9 +153,9 @@ class LibraryTest {
     @Test
     public void testShouldThrowExceptionWhenBookIsAlreadyBorrowed() {
 
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
-        User user1 = new User("raiyan", Role.USER);
-        User user2 = new User("usman", Role.USER);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
+        User user1 = new User("raiyan", User.Role.USER);
+        User user2 = new User("usman", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -171,8 +171,8 @@ class LibraryTest {
 
     @Test
     public void testShouldReturnBorrowerNameWhoBorrowedBook() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
-        User user = new User("raiyan", Role.USER);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
+        User user = new User("raiyan", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -188,8 +188,8 @@ class LibraryTest {
 
     @Test
     public void testShouldAllowUserToReturnBookToLibrary() {
-        User librarian = new User("rizwan", Role.LIBRARIAN);
-        User user = new User("raiyan", Role.USER);
+        User librarian = new User("rizwan", User.Role.LIBRARIAN);
+        User user = new User("raiyan", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -205,9 +205,9 @@ class LibraryTest {
 
     @Test
     public void testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
-        User user1 = new User("raiyan", Role.USER);
-        User user2 = new User("usman", Role.USER);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
+        User user1 = new User("raiyan", User.Role.USER);
+        User user2 = new User("usman", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);
@@ -223,8 +223,8 @@ class LibraryTest {
 
     @Test
     public void testShouldThrowExceptionWhenNoOneBorrowedBook() {
-        User librarian = new User("Rizwan", Role.LIBRARIAN);
-        User user1 = new User("raiyan", Role.USER);
+        User librarian = new User("Rizwan", User.Role.LIBRARIAN);
+        User user1 = new User("raiyan", User.Role.USER);
         Book book = new Book("9780132350884", "Clean Code", "Robert Cecil Martin", Year.of(2012));
 
         library.addUser(librarian);

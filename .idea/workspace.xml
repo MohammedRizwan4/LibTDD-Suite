@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Added]: README.md file added">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: Reordered import statements and maintained consistency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,22 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest">
+  <component name="RunManager" selected="JUnit.BookTest">
+    <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizwan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rizwan" />
+      <option name="MAIN_CLASS_NAME" value="com.rizwan.BookTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -165,29 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rizwan" />
-      <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.LibraryTest (1)" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook" />
-        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" />
       </list>
     </recent_temporary>
   </component>
@@ -202,15 +201,7 @@
       <workItem from="1723197674060" duration="1763000" />
       <workItem from="1723368009665" duration="4656000" />
       <workItem from="1723372692363" duration="913000" />
-      <workItem from="1723373856965" duration="2026000" />
-    </task>
-    <task id="LOCAL-00004" summary="Failed TestCase: Library Name should not be empty">
-      <option name="closed" value="true" />
-      <created>1723213049066</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1723213049066</updated>
+      <workItem from="1723373856965" duration="2249000" />
     </task>
     <task id="LOCAL-00005" summary="Passed TestCase: Blank Library name validation added">
       <option name="closed" value="true" />
@@ -596,14 +587,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723372835906</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="[Refactor]: Reordered import statements and maintained consistency">
+      <option name="closed" value="true" />
+      <created>1723376831099</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1723376831099</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passed Test Case: Implemented viewAvailableBooks method to view all books" />
     <MESSAGE value="Failed TestCase: added failing test case to ensure that viewAvailableBooks return unmodifiable HashMap" />
     <MESSAGE value="Passed Test Case: ensured that returned HashMap from viewAvailableBooks will be unmodifiable" />
     <MESSAGE value="Failed TestCase: Added failing test case for borrowing an available book" />
@@ -628,7 +626,8 @@
     <MESSAGE value="[Refactor]: Moved PermissionDeniedException class into exceptions directory" />
     <MESSAGE value="readme" />
     <MESSAGE value="[Added]: README.md file added" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Added]: README.md file added" />
+    <MESSAGE value="[Refactor]: Reordered import statements and maintained consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: Reordered import statements and maintained consistency" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
