@@ -2,6 +2,7 @@ package com.rizwan;
 
 import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
+import com.rizwan.exceptions.PermissionDeniedException;
 import com.rizwan.exceptions.UserExistsException;
 
 import static com.rizwan.utils.StringValidator.validateString;
