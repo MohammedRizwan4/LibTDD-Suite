@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: refactored illegal argument exception to BookNotFound exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/exceptions/BookAlreadyBorrowedException.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: refactored illegal argument exception to BookAlreadyBorrowedException for particular conditions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/exceptions/UserExistsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
@@ -531,14 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723355682966</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="[Refactor]: refactored illegal argument exception to BookAlreadyBorrowedException for particular conditions">
+      <option name="closed" value="true" />
+      <created>1723355813927</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1723355813927</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation." />
     <MESSAGE value="Failed TestCase: addUser and getUserByName method not found" />
     <MESSAGE value="Passed Test Case: implemented storing user functionality in library" />
     <MESSAGE value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
@@ -563,7 +570,8 @@
     <MESSAGE value="Failed TestCase: Added failing test case when user returns book that was not borrowed by anyone" />
     <MESSAGE value="Passed TestCase: returnBook throws exception when returning a book not borrowed by anyone" />
     <MESSAGE value="[Refactor]: refactored illegal argument exception to BookNotFound exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: refactored illegal argument exception to BookNotFound exception" />
+    <MESSAGE value="[Refactor]: refactored illegal argument exception to BookAlreadyBorrowedException for particular conditions" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: refactored illegal argument exception to BookAlreadyBorrowedException for particular conditions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

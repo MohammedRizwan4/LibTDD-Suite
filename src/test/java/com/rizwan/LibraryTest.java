@@ -2,6 +2,7 @@ package com.rizwan;
 
 import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
+import com.rizwan.exceptions.UserExistsException;
 import org.junit.jupiter.api.Test;
 
 import java.time.Year;
@@ -70,7 +71,7 @@ class LibraryTest {
         User secondaryLibrarian = new User("rizwan", Role.LIBRARIAN);
 
         library.addUser(primaryLibrarian);
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> library.addUser(secondaryLibrarian));
+        UserExistsException exception = assertThrows(UserExistsException.class, () -> library.addUser(secondaryLibrarian));
         assertEquals("User already exists in catalog", exception.getMessage());
     }
 
