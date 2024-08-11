@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Failed TestCase: Added failing test case when user returns book that was not borrowed by anyone">
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="Passed TestCase: returnBook throws exception when returning a book not borrowed by anyone">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/exceptions/BookNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +87,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook">
+  <component name="RunManager" selected="JUnit.LibraryTest">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -166,8 +169,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook" />
         <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowUserToReturnBookToLibrary" />
         <item itemvalue="JUnit.LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook" />
@@ -512,14 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723308812544</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Passed TestCase: returnBook throws exception when returning a book not borrowed by anyone">
+      <option name="closed" value="true" />
+      <created>1723308893340</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1723308893340</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Refactor]: Added custom PermissionDeniedException exception for unauthorized users." />
     <MESSAGE value="Failed TestCase: Added failing tests for validating null and empty fields in Book Class constructor" />
     <MESSAGE value="Passed Test Case: Implemented logic to validate mandatory fields in Book object creation." />
     <MESSAGE value="Failed TestCase: addUser and getUserByName method not found" />
@@ -544,7 +554,8 @@
     <MESSAGE value="Failed TestCase: Added failing test when user returns book but that is not borrowed by him" />
     <MESSAGE value="Passed TestCase: throws exception when user try to return a book but not borrowed by him." />
     <MESSAGE value="Failed TestCase: Added failing test case when user returns book that was not borrowed by anyone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed TestCase: Added failing test case when user returns book that was not borrowed by anyone" />
+    <MESSAGE value="Passed TestCase: returnBook throws exception when returning a book not borrowed by anyone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed TestCase: returnBook throws exception when returning a book not borrowed by anyone" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

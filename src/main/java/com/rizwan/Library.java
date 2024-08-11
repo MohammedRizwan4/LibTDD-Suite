@@ -1,5 +1,7 @@
 package com.rizwan;
 
+import com.rizwan.exceptions.BookNotFoundException;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -55,7 +57,7 @@ public class Library {
         }
 
         if(book == null){
-            throw new IllegalArgumentException("Book not found");
+            throw new BookNotFoundException("Book not found");
         }
 
         borrowedBooks.put(isbn, user.getUserName());
@@ -65,7 +67,7 @@ public class Library {
 
     public void returnBook(User user, String isbn) {
         if(!borrowedBooks.containsKey(isbn)) {
-            throw new IllegalArgumentException("Book was not borrowed by any user");
+            throw new BookNotFoundException("Book was not borrowed by any user");
         }
         if( !user.getUserName().equals(borrowedBooks.get(isbn))){
             throw new IllegalArgumentException("book was not borrowed by this user");

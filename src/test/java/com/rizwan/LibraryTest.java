@@ -1,5 +1,6 @@
 package com.rizwan;
 
+import com.rizwan.exceptions.BookNotFoundException;
 import org.junit.jupiter.api.Test;
 
 import java.time.Year;
@@ -134,7 +135,7 @@ class LibraryTest {
 
         library.addUser(user);
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> library.borrowBook(user, "9780132350884"));
+        BookNotFoundException exception = assertThrows(BookNotFoundException.class, () -> library.borrowBook(user, "9780132350884"));
         assertEquals("Book not found", exception.getMessage());
     }
 
@@ -219,7 +220,7 @@ class LibraryTest {
         library.addUser(user1);
         library.addBook(librarian, book);
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> library.returnBook(user1, "9780132350884"));
+        BookNotFoundException exception = assertThrows(BookNotFoundException.class, () -> library.returnBook(user1, "9780132350884"));
         assertEquals("Book was not borrowed by any user", exception.getMessage());
     }
 
