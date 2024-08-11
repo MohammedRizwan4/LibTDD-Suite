@@ -1,17 +1,17 @@
 package com.rizwan;
 
-import com.rizwan.exceptions.BookAlreadyBorrowedException;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collections;
+
+import com.rizwan.exceptions.UserExistsException;
 import com.rizwan.exceptions.BookNotFoundException;
 import com.rizwan.exceptions.PermissionDeniedException;
-import com.rizwan.exceptions.UserExistsException;
+import com.rizwan.exceptions.BookAlreadyBorrowedException;
 
+import static com.rizwan.utils.UserValidator.validateUser;
 import static com.rizwan.utils.StringValidator.validateString;
 import static com.rizwan.utils.BookValidator.validateBookNotNull;
-import static com.rizwan.utils.UserValidator.validateUser;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Library {
 
