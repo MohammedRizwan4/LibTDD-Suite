@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: refactored test case from illegal argument exception to UserExistsException for duplicate users">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/utils/StringValidator.java" afterDir="false" />
+    <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: extracted string validation code for all files into StringValidator utility class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/utils/BookValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -547,14 +546,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723356079305</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="[Refactor]: extracted string validation code for all files into StringValidator utility class">
+      <option name="closed" value="true" />
+      <created>1723357447550</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1723357447550</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passed Test Case: implemented storing user functionality in library" />
     <MESSAGE value="Failed Test Case: Added failing test case for duplicate user prevention in library catalog" />
     <MESSAGE value="Passed Test Case: Implemented logic to prevent duplicate users in library" />
     <MESSAGE value="Passed Test Case: User fetched by username from users catalog" />
@@ -579,7 +585,8 @@
     <MESSAGE value="[Refactor]: refactored illegal argument exception to BookNotFound exception" />
     <MESSAGE value="[Refactor]: refactored illegal argument exception to BookAlreadyBorrowedException for particular conditions" />
     <MESSAGE value="[Refactor]: refactored test case from illegal argument exception to UserExistsException for duplicate users" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: refactored test case from illegal argument exception to UserExistsException for duplicate users" />
+    <MESSAGE value="[Refactor]: extracted string validation code for all files into StringValidator utility class" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: extracted string validation code for all files into StringValidator utility class" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryManagement$LibraryTest.ic" NAME="LibraryTest Coverage Results" MODIFIED="1723296654007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

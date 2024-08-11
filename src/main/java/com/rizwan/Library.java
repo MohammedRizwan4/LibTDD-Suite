@@ -3,7 +3,9 @@ package com.rizwan;
 import com.rizwan.exceptions.BookAlreadyBorrowedException;
 import com.rizwan.exceptions.BookNotFoundException;
 import com.rizwan.exceptions.UserExistsException;
+
 import static com.rizwan.utils.StringValidator.validateString;
+import static com.rizwan.utils.BookValidator.validateBookNotNull;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -41,6 +43,7 @@ public class Library {
     }
 
     public void addBook(User user, Book book) {
+        validateBookNotNull(book,"Book not found");
         if(user.isPermittedToAddBook()){
             bookInventory.put(book.getISBN(), book);
         } else {
@@ -59,9 +62,7 @@ public class Library {
             throw new BookAlreadyBorrowedException("Book is already borrowed");
         }
 
-        if(book == null){
-            throw new BookNotFoundException("Book not found");
-        }
+        validateBookNotNull(book,"Book not found");
 
         borrowedBooks.put(isbn, user.getUserName());
         borrowedBookDetails.put(isbn, book);
