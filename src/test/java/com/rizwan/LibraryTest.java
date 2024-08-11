@@ -34,6 +34,12 @@ class LibraryTest {
     }
 
     @Test
+    public void testShouldThrowExceptionIfUserIsNull() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> library.addUser(null));
+        assertEquals("User should not be null", exception.getMessage());
+    }
+
+    @Test
     public void testShouldAllowOnlyPermittedUserToAddBook() {
         User user = new User("Rizwan", Role.LIBRARIAN);
 

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a143536-a965-4965-bc8d-1d549edc1836" name="Changes" comment="[Refactor]: extracted string validation code for all files into StringValidator utility class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/utils/BookValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rizwan/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rizwan/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
     "JUnit.LibraryTest.testShouldReturnUnmodifiableMap.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfAnyFieldIsNullOrEmpty.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionIfUnauthorizedUserAddBook.executor": "Run",
+    "JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionWhenBookIsAlreadyBorrowed.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionWhenBookNotFoundDuringBorrowRequest.executor": "Run",
     "JUnit.LibraryTest.testShouldThrowExceptionWhenISBNisNull.executor": "Run",
@@ -86,7 +86,7 @@
       <recent name="com.rizwan" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest">
+  <component name="RunManager" selected="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
@@ -118,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testShouldThrowExceptionIfUserIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagement" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rizwan" />
       <option name="MAIN_CLASS_NAME" value="com.rizwan.LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldReturnBorrowerNameWhoBorrowedBook" />
+      <option name="METHOD_NAME" value="testShouldThrowExceptionIfUserIsNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionIfUserIsNull" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenNoOneBorrowedBook" />
         <item itemvalue="JUnit.LibraryTest.testShouldThrowExceptionWhenUserReturnsBookThatIsNotBorrowedByHim" />
         <item itemvalue="JUnit.LibraryTest.testShouldAllowUserToReturnBookToLibrary" />
-        <item itemvalue="JUnit.LibraryTest.testShouldReturnBorrowerNameWhoBorrowedBook" />
       </list>
     </recent_temporary>
   </component>
